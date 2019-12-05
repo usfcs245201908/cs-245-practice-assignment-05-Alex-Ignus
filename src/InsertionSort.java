@@ -1,6 +1,6 @@
 class InsertionSort implements SortingAlgorithm {
 
-    //@Override
+    @Override
     public void sort(int [] a) {
         for(int i = 0; i < a.length ; i++) {
             int temp = a[i];

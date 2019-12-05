@@ -1,9 +1,10 @@
 public class QuickSort implements SortingAlgorithm {
 
-
+    @Override
     public void sort(int[] qArr) {
         sort(qArr, 0, qArr.length-1);
     }
+
 
     public void sort(int []qArr, int min, int max){
         if (min < max){
@@ -16,13 +17,12 @@ public class QuickSort implements SortingAlgorithm {
     public int split(int [] qArr, int min, int max){
         int i = min + 1;
         int j= max;
-        int p = min;
 
         while(i <= j ){
-            while (qArr[i]< qArr [p] && i <= max){
+            while (qArr[i]< qArr [min] && i <= max){
                 i++;
             }
-            while ( j > min && qArr[j] >= qArr[p]){
+            while ( j > min && qArr[j] >= qArr[min]){
                 j--;
             }
             if (i<=j){
@@ -32,7 +32,7 @@ public class QuickSort implements SortingAlgorithm {
             }
 
         }
-        swap (qArr, j, p);
+        swap (qArr, j, min);
         return j;
     }
 

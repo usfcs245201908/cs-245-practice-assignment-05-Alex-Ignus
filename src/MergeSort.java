@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class MergeSort implements SortingAlgorithm {
+
     @Override
     public void sort(int[] mergeArr) {
         if ( mergeArr.length <= 1) {
