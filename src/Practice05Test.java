@@ -171,7 +171,7 @@ public class Practice05Test {
 				// For each algorithm:
 				// a) Copy the array
 				int [] copy = copyArray();
-				// b) Have the algorithm sort the copy ... while timing it.
+				// b) Have the algorithm quicksort the copy ... while timing it.
 				long start = System.currentTimeMillis();
 				sort.sort(copy);
 				// System.out.println("Sorting took: " + (System.currentTimeMillis() - start) + " ms.");
